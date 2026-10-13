@@ -1,0 +1,37 @@
+.lightproxy-status-bar {
+    font-size: @font-size-small;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: block;
+    height: 25px;
+    padding: 5px 10px 0px 10px;
+    width: 100%;
+    color: @font-color;
+
+    text-align: right;
+
+    vertical-align: middle;
+
+    &>*{
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 20px;
+    }
+
+    &.color-normal {
+        background-color: @status-bar-background-color;
+    }
+
+    &.color-warn {
+        background-color: @status-bar-background-color-loading;
+    }
+
+    .color-success {
+        color: @icon-success-color;
+    }
+
+    .color-warn {
+        color: @icon-success-warn;
+    }
+}
